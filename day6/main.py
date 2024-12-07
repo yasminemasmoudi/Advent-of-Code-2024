@@ -51,7 +51,6 @@ def part1():
 #part1()
 
 def part2():
-        # Read the file and strip newline characters
     matrix = []
     count = 1
     with open("input.txt") as file:
@@ -61,7 +60,6 @@ def part2():
         
     arr =  np.array(matrix)
     rows, columns = arr.shape
-
 
     directions = {'^': (-1, 0), '>': (0, 1), 'v': (1, 0), '<': (0, -1)}
     turn_right = {'^': '>', '>': 'v', 'v': '<', '<': '^'}
